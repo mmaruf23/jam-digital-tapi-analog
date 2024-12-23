@@ -6,13 +6,22 @@ const rotatemenit = document.querySelector(".menit");
 const rotatedetik = document.querySelector(".detik");
 
 function init() {
-  minutes = new Date().getMinutes();
+
+  const seconds = new Date().getSeconds();
+
+  rotatedetik.style.rotate = `${seconds * 6}deg`;
+  detik.forEach(function (e) {
+    e.textContent = seconds;
+    e.style.rotate = `-${seconds * 6}deg`;
+  });
+
+  const minutes = new Date().getMinutes();
   rotatemenit.style.rotate = `${minutes * 6}deg`;
   menit.forEach(function (e) {
     e.textContent = minutes;
     e.style.rotate = `-${minutes * 6}deg`;
   });
-  hours = new Date().getHours();
+  const hours = new Date().getHours();
   rotatejam.style.rotate = `${hours * 15}deg`;
 
   jam.forEach(function (e) {

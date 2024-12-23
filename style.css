@@ -1,4 +1,5 @@
 body {
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
 }
 .container {
@@ -42,15 +43,21 @@ body {
   gap: 3vw;
 }
 
-@media screen and (min-width: 768px) {
+.footer {
+  /* background-color: blue; */
+  text-align: center;
+}
+
+@media screen and (min-width: 768px)
+{
   
   .container {
-    height: 50vw;
+    height: 700px;
     font-size: 1.5rem;
   }
   .box {
-    height: 45vw;
-    width: 45vw;
+    height: 600px;
+    width: 600px;
   }
   .jam,
 .menit,
@@ -58,7 +65,7 @@ body {
   position: absolute;
   /* background-color: blue; */
   width: 10px;
-  height: 45vw;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -66,10 +73,43 @@ body {
 .space-left {
   /* background-color: black; */
   width: 10px;
-  height: 24vw;
+  height: 340px;
 }
 .space {
-  height: 20vw;
-  gap: 2.3vw;
+  height: 250px;
+  gap: 20px;
+}
+}
+@media screen and (max-width: 480px)
+{
+  
+  .container {
+    height: 400px;
+    font-size: 0  .8rem;
+  }
+  .box {
+    height: 360px;
+    width: 360px;
+  }
+  .jam,
+.menit,
+.detik {
+  position: absolute;
+  /* background-color: blue; */
+  width: 10px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.space-left {
+  /* background-color: black; */
+  width: 10px;
+  height: 220px;
+}
+.space {
+  /* background-color: red; */
+  height: 140px;
+  gap: 5px;
 }
 }

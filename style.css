@@ -77,7 +77,7 @@ body {
 }
 .space {
   height: 250px;
-  gap: 20px;
+  gap: 17px;
 }
 }
 @media screen and (max-width: 480px)

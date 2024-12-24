@@ -42,10 +42,17 @@ body {
   justify-content: end;
   gap: 3vw;
 }
+.space div {
+  /* background-color: red; */
+  width: 30px;
+  height: 30px;
+}
 
 .footer {
+  font-size: small;
+  position: absolute;
+  bottom: 20px;
   /* background-color: blue; */
-  text-align: center;
 }
 
 @media screen and (min-width: 768px)
@@ -78,7 +85,9 @@ body {
 .space {
   height: 250px;
   gap: 17px;
+  /* text-align: center; */
 }
+
 }
 @media screen and (max-width: 480px)
 {
@@ -110,6 +119,15 @@ body {
 .space {
   /* background-color: red; */
   height: 140px;
-  gap: 5px;
+  gap: 3px;
 }
+.space div {
+  /* background-color: red; */
+  width: 20px;
+  height: 20px;
+}
+.footer {
+  bottom: -20vw;
+}
+
 }
